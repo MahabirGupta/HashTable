@@ -41,5 +41,10 @@ public class Main {
 //        to get all the keys from the HashTable
         System.out.println(hashtable3.keySet());
 
+        //        to get all the values from the HashTable
+        System.out.println(hashtable3.values());
+
+
+
     }
 }
