@@ -33,6 +33,10 @@ public class Main {
         //        check whether the particular value is in the HashTable
         hashtable3.contains("Anish");
         System.out.println(hashtable3.contains("Anish"));
+        System.out.println();
+
+//        check whether HashTable is empty
+        System.out.println(hashtable3.isEmpty());
 
     }
 }
