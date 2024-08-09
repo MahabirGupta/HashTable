@@ -38,5 +38,8 @@ public class Main {
 //        check whether HashTable is empty
         System.out.println(hashtable3.isEmpty());
 
+//        to get all the keys from the HashTable
+        System.out.println(hashtable3.keySet());
+
     }
 }
