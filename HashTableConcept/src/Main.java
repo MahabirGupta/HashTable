@@ -1,4 +1,5 @@
 import java.util.Hashtable;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,11 +40,24 @@ public class Main {
         System.out.println(hashtable3.isEmpty());
 
 //        to get all the keys from the HashTable
-        System.out.println(hashtable3.keySet());
+        System.out.println(hashtable3.keySet()); // will return all the keys as a Set
 
         //        to get all the values from the HashTable
-        System.out.println(hashtable3.values());
+        System.out.println(hashtable3.values()); // will return all the values as a Collection
+        System.out.println();
 
+//        to get individual keys and individual values
+//        using for..each loop
+//        for (Map.Entry<Integer, String> keyValues:hashtable3.entrySet()){
+//            System.out.println(keyValues);
+//
+//        }
+
+        for (int keyValues:hashtable3.keySet()){
+            System.out.println(keyValues + " " + hashtable3.get(keyValues));
+
+        }
+//      Using Entry
 
 
     }
