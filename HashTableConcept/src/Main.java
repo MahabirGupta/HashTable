@@ -1,5 +1,7 @@
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -57,7 +59,22 @@ public class Main {
             System.out.println(keyValues + " " + hashtable3.get(keyValues));
 
         }
-//      Using Entry
+
+        System.out.println();
+//      Using Entry specific methods
+        for (Map.Entry entry:hashtable3.entrySet()){ //combination of (key,value) is 1 entry
+            System.out.println(entry.getKey() + "  " + entry.getValue());
+        }
+
+        System.out.println();
+
+//        using iterator method
+        Set set = hashtable3.entrySet(); // entrySet() will return all the entries
+        Iterator iterator = set.iterator();
+        while (iterator.hasNext()){
+            Map.Entry entry = (Map.Entry) iterator.next(); // iterator.next() will return key value pair
+            System.out.println(entry.getKey() + "  " + entry.getValue());
+        }
 
 
     }
